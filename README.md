@@ -9,8 +9,8 @@ Official website of **FG Public School Boys, Kharian Cantt**, built with the sch
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The website source (HTML + CSS + JS in one file). It loads the 6 school photos from an `assets/` folder — the exact structure deployed on Vercel. |
-| `standalone.html` | The complete website as a single self-contained file, with all 6 photos embedded inside it. Open it in any browser — no other files needed. |
+| `index.html` | The complete website in a single file — HTML, CSS, JS **and all 6 school photos embedded inside it**. No `assets/` folder needed, so it works as-is on GitHub Pages and in any browser. |
+| `standalone.html` | An identical copy of the one-file version, kept as a backup. |
 
 ## Sections
 
@@ -34,7 +34,7 @@ Official website of **FG Public School Boys, Kharian Cantt**, built with the sch
 
 ## Run it locally
 
-Open `standalone.html` in a browser — that's all. For the `index.html` version, serve the folder with any static server (for example `npx serve .`) together with the `assets/` photo folder used by the live deployment.
+Open `index.html` in a browser — that's all, the photos are inside the file. The GitHub Pages version of this repo serves the same `index.html`.
 
 ---
 Built by Muhammad Hamza (DevTech Labs) for FG Public School Boys, Kharian Cantt.
