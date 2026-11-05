@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="color-scheme" content="light dark"/>
+<link rel="icon" href="data:,"/>
+<title>FG Public School Boys Kharian Cantt — Education • Discipline • Character Building</title>
+<meta name="description" content="FG Public School Boys, Kharian Cantt — a Federal Government Educational Institutions (FGEI) school for boys. Admissions, academics, sports, morning assembly and campus life."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0b3d2a; --green2:#14532d; --green-soft:#e7f0e9; --gold:#c9a227; --gold2:#e8c85a;
+  --bg:#fbfaf6; --surface:#ffffff; --surface2:#f3efe4; --ink:#17211b; --muted:#5c6b60; --line:#e2ded0;
+  --radius:18px; --shadow:0 18px 40px rgba(11,61,42,.14);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1511; --surface:#16211a; --surface2:#1b2a20; --ink:#edf2ec; --muted:#a9b8ad; --line:#2a3a2f; --green-soft:#1b2f24; --shadow:0 18px 40px rgba(0,0,0,.4);}
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,92%);margin:0 auto}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.08;margin:0}
+h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+.lead{color:var(--muted);font-size:1.06rem}
+/* top strip */
+.strip{background:var(--green);color:#fff;font-size:.82rem}
+.strip .wrap{display:flex;justify-content:space-between;gap:12px;padding:.5rem 0;flex-wrap:wrap}
+.strip b{color:var(--gold2)}
+/* nav */
+header.site{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:.8rem 0}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none}
+.crest{width:48px;height:48px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:800;border:2px solid var(--gold);flex:none}
+.brand strong{display:block;font-family:"Playfair Display",serif;font-size:1.02rem;line-height:1.15}
+.brand span{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+nav.links{display:flex;gap:4px;flex-wrap:wrap}
+nav.links a{text-decoration:none;font-weight:700;font-size:.92rem;padding:.5rem .7rem;border-radius:999px}
+nav.links a:hover{background:var(--green-soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#231a00;font-weight:800;text-decoration:none;padding:.75rem 1.2rem;border-radius:999px;border:0;cursor:pointer;font-size:.95rem}
+.btn.green{background:var(--green);color:#fff}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.burger{display:none;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.5rem .7rem;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+@media(max-width:860px){ nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);flex-direction:column;padding:12px 4%;border-bottom:1px solid var(--line)} nav.links.open{display:flex} .burger{display:block} header.site{position:sticky} .nav{position:relative} }
+/* hero */
+.hero{position:relative;color:#fff}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,35,22,.88) 0%,rgba(6,35,22,.62) 52%,rgba(6,35,22,.18) 100%)}
+.hero-in{position:relative;z-index:2;padding:clamp(3.2rem,8vw,6.2rem) 0 clamp(2.6rem,6vw,4.5rem);max-width:720px}
+.pill{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:.35rem .8rem;border-radius:999px;font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.3rem,6vw,4.1rem);margin:1rem 0 .8rem}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{font-size:1.08rem;color:#e8efe9;max-width:56ch}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.4rem}
+.hero-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:2.2rem;max-width:680px}
+.hero-cards div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:.85rem 1rem;backdrop-filter:blur(4px)}
+.hero-cards b{display:block;font-family:"Playfair Display",serif;font-size:1.25rem}
+.hero-cards span{font-size:.82rem;color:#dfe9df}
+@media(max-width:640px){.hero-cards{grid-template-columns:1fr 1fr}}
+/* ticker */
+.ticker{background:var(--gold);color:#241a00;font-weight:700;font-size:.92rem;overflow:hidden;white-space:nowrap}
+.ticker div{display:inline-block;padding:.55rem 0;animation:tick 30s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.ticker div{animation:none} html{scroll-behavior:auto}}
+/* sections */
+section{padding:clamp(3rem,7vw,5rem) 0}
+.alt{background:var(--surface2)}
+.sec-head{max-width:720px;margin-bottom:2rem}
+.sec-head .k{color:var(--green2);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+@media (prefers-color-scheme: dark){.sec-head .k{color:var(--gold2)}}
+.sec-head h2{margin:.45rem 0 .6rem}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.photo.tall img{aspect-ratio:3/3.4}
+.figcap{font-size:.85rem;color:var(--muted);margin-top:.6rem}
+.checks{list-style:none;padding:0;margin:1.2rem 0;display:grid;gap:.6rem}
+.checks li{display:flex;gap:.6rem;font-weight:600}
+.checks li::before{content:"✓";color:var(--green2);font-weight:900}
+@media (prefers-color-scheme: dark){.checks li::before{color:var(--gold2)}}
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid3,.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
+.card h3{font-size:1.25rem;margin:.5rem 0 .4rem}
+.card p{color:var(--muted);margin:0;font-size:.96rem}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--green-soft);display:grid;place-items:center;font-size:1.3rem}
+.tag{display:inline-block;background:var(--green-soft);color:var(--green2);font-weight:800;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .6rem;border-radius:999px}
+@media (prefers-color-scheme: dark){.tag{color:var(--gold2)}}
+/* principal */
+.principal{background:var(--green);color:#fff;border-radius:26px;padding:clamp(1.6rem,4vw,2.8rem);display:grid;grid-template-columns:.85fr 1.15fr;gap:2rem;align-items:center}
+@media(max-width:860px){.principal{grid-template-columns:1fr}}
+.principal img{border-radius:18px;width:100%;height:100%;object-fit:cover;aspect-ratio:3/3.6}
+.principal p{color:#dbe7dc}
+.principal .sig{font-family:"Playfair Display",serif;font-size:1.3rem;color:var(--gold2)}
+blockquote{margin:0;font-family:"Playfair Display",serif;font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.35}
+/* timeline */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.2rem}
+.step b.num{width:36px;height:36px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif}
+.step h3{font-size:1.05rem;margin:.7rem 0 .3rem}.step p{color:var(--muted);font-size:.92rem;margin:0}
+.notice{background:#fff7dd;border:1px solid #ecd27a;color:#4a3a00;border-radius:16px;padding:1.1rem 1.3rem;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+@media (prefers-color-scheme: dark){.notice{background:#2c270e;color:#f3df9a;border-color:#6b5c1c}}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.gal{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.gal{grid-template-columns:1fr}}
+.gal figure{margin:0;border-radius:16px;overflow:hidden;position:relative;cursor:pointer;background:var(--surface)}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .4s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:2rem .9rem .7rem;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:.88rem;font-weight:700}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;place-items:center;padding:18px}
+.lb.open{display:grid}
+.lb img{max-height:82vh;border-radius:12px}
+.lb p{color:#fff;text-align:center;font-weight:700}
+.lb button{position:absolute;top:16px;right:16px;background:#fff;border:0;border-radius:999px;width:42px;height:42px;font-size:1.2rem;cursor:pointer}
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer}
+details p{color:var(--muted)}
+/* footer */
+footer{background:var(--green);color:#dce8dd;padding:3rem 0 1.4rem;margin-top:0}
+footer h3{color:#fff}
+footer a{color:#dce8dd}
+.fcols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2rem}
+@media(max-width:760px){.fcols{grid-template-columns:1fr}}
+.fine{border-top:1px solid rgba(255,255,255,.2);margin-top:2rem;padding-top:1rem;font-size:.85rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.reveal{opacity:1}
+.reveal.in{animation:fadeUp .75s cubic-bezier(.22,.8,.3,1) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.card,.step,details{transition:transform .3s ease,box-shadow .3s ease}
+.card:hover,.step:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.photo{transition:transform .3s ease,box-shadow .3s ease}
+.photo:hover{transform:translateY(-3px)}
+.photo img{transition:transform .8s ease}
+.photo:hover img{transform:scale(1.03)}
+.hero .bg{animation:heroZoom 22s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+header.site{transition:box-shadow .3s ease}
+header.site.scrolled{box-shadow:0 10px 30px rgba(11,61,42,.16)}
+header.site.scrolled .nav{padding:.45rem 0}
+.nav{transition:padding .3s ease}
+.btn{transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.18)}
+nav.links a{transition:background .25s ease}
+@media (prefers-reduced-motion: reduce){.reveal.in{animation:none}.hero .bg{animation:none}.card:hover,.step:hover,.photo:hover,.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<div class="strip"><div class="wrap"><span>🏛️ Federal Government Educational Institutions (FGEI) — Cantts &amp; Garrisons</span><span>📍 <b>Kharian Cantt</b>, Punjab, Pakistan</span></div></div>
+
+<header class="site"><div class="wrap nav">
+  <a class="brand" href="#top"><span class="crest">FG</span><span><strong>FG Public School (Boys)</strong><span>Kharian Cantt</span></span></a>
+  <button class="burger" id="burger" aria-label="Open menu">☰</button>
+  <nav class="links" id="links">
+    <a href="#about">About</a><a href="#academics">Academics</a><a href="#assembly">Assembly</a><a href="#sports">Sports</a><a href="#gallery">Gallery</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a>
+    <a class="btn" href="#admissions" style="padding:.55rem 1rem">Apply for Admission</a>
+  </nav>
+</div></header>
+
+<!-- HERO — main school building -->
+<section class="hero" id="top" style="padding:0">
+  <img class="bg" src="assets/building.jpg" alt="Main building of F.G. Public School Kharian Cantt, with the school name written on the facade"/>
+  <div class="wrap hero-in">
+    <span class="pill">⭐ FGEI • Boys School • Kharian Cantt</span>
+    <h1>FG Public School <em>Boys</em><br/>Kharian Cantt</h1>
+    <p>A Federal Government school in the heart of Kharian Cantonment — where strong academics, strict discipline and character building shape confident young men, from the junior classes to Matric.</p>
+    <div class="hero-cta"><a class="btn" href="#admissions">Admissions 2026 →</a><a class="btn ghost" href="#gallery">See Campus Life</a></div>
+    <div class="hero-cards">
+      <div><b>Education</b><span>Strong academics, class by class</span></div>
+      <div><b>Discipline</b><span>Assembly, uniform &amp; punctuality daily</span></div>
+      <div><b>Character</b><span>Values, sportsmanship &amp; patriotism</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-label="Announcements"><div>📢 Admissions 2026 — Admissions close 31 March 2026 &nbsp;•&nbsp; Classes commence 06 April 2026 &nbsp;•&nbsp; Morning assembly is held daily on the school ground &nbsp;•&nbsp; Kharian Region Football Team — regional champions 🏆 &nbsp;•&nbsp; 📢 Admissions 2026 — Admissions close 31 March 2026 &nbsp;•&nbsp; Classes commence 06 April 2026 &nbsp;•&nbsp; Morning assembly is held daily on the school ground &nbsp;•&nbsp; Kharian Region Football Team — regional champions 🏆 &nbsp;•&nbsp;</div></div>
+
+<!-- ABOUT -->
+<section id="about"><div class="wrap">
+  <div class="split reveal">
+    <div>
+      <div class="sec-head" style="margin-bottom:0"><span class="k">About Our School</span><h2>A landmark of learning in Kharian Cantt</h2></div>
+      <p class="lead">FG Public School (Boys), Kharian Cantt is part of the Federal Government Educational Institutions (FGEI) network serving cantonments and garrisons across Pakistan. Our two-storey main building — with the school name proudly written across its facade — opens onto a green, tree-lined campus with open grounds for assembly, sport and national-day celebrations.</p>
+      <ul class="checks">
+        <li>Boys' education from junior classes through Matric (SSC)</li>
+        <li>Experienced, dedicated teaching staff under FGEI</li>
+        <li>Green campus with large playground and assembly ground</li>
+        <li>Equal focus on studies, sports and character building</li>
+      </ul>
+      <a class="btn green" href="#principal">Principal's Message ↓</a>
+    </div>
+    <div><div class="photo"><img src="assets/assembly.jpg" alt="Students of FG Public School Kharian Cantt standing in neat rows during morning assembly on the green ground"/></div><p class="figcap">Morning assembly on the school ground — every school day begins in neat rows, in full uniform.</p></div>
+  </div>
+</div></section>
+
+<!-- PRINCIPAL -->
+<section id="principal" style="padding-top:0"><div class="wrap reveal">
+  <div class="principal">
+    <img src="assets/principal.jpg" alt="The Principal of FG Public School Boys Kharian Cantt seated at his desk in his office, with the school's winner trophies displayed behind him"/>
+    <div>
+      <span class="tag" style="background:rgba(255,255,255,.15);color:var(--gold2)">Principal's Message</span>
+      <blockquote style="margin-top:1rem">“Every boy who walks through our gate carries a future. Our job is simple — give him knowledge, discipline and character, and he will make his family and his country proud.”</blockquote>
+      <p style="margin-top:1rem">Welcome to FG Public School (Boys), Kharian Cantt. Behind me in my office stand the trophies our students have won for this school — in football and in regional competitions. They are a daily reminder that our boys succeed when teachers, parents and students work together. We invite you to visit the school, meet our staff, and see our assembly, classrooms and grounds for yourself.</p>
+      <p class="sig">— The Principal<br/><span style="font-family:Manrope,sans-serif;font-size:.85rem;color:#cfe0d0">FG Public School (Boys), Kharian Cantt</span></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ACADEMICS -->
+<section id="academics" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><span class="k">Academics</span><h2>Learning at every stage</h2><p class="lead">A clear path from the first classroom to the Matric examination — with close attention at each stage.</p></div>
+  <div class="grid3 reveal">
+    <article class="card"><div class="ico">📚</div><span class="tag">Junior Section</span><h3>Primary Classes</h3><p>Strong foundations in Urdu, English, Mathematics, Science and Islamiat — reading, writing and good habits built from day one, with activity-based learning for young boys.</p></article>
+    <article class="card"><div class="ico">✏️</div><span class="tag">Middle Section</span><h3>Classes VI – VIII</h3><p>Deeper study of English, Mathematics, General Science, Social Studies and Computer Science, with regular tests, homework checks and class competitions.</p></article>
+    <article class="card"><div class="ico">🎓</div><span class="tag">Secondary Section</span><h3>Matric — IX &amp; X</h3><p>Focused board-examination preparation in Science and Humanities groups — Physics, Chemistry, Biology / Computer Science and Mathematics — with revision tests and pre-board exams.</p></article>
+    <article class="card"><div class="ico">💻</div><h3>Computer &amp; Science Learning</h3><p>Practical learning through the computer lab and science activities, so students connect classroom theory with the real world.</p></article>
+    <article class="card"><div class="ico">📖</div><h3>Library &amp; Reading</h3><p>A school library and reading periods that build vocabulary, general knowledge and a lifelong habit of reading.</p></article>
+    <article class="card"><div class="ico">🏅</div><h3>Tests &amp; Assessment</h3><p>Monthly tests, term examinations and parent–teacher meetings keep parents fully informed of every student's progress.</p></article>
+  </div>
+</div></section>
+
+<!-- ASSEMBLY & DISCIPLINE -->
+<section id="assembly"><div class="wrap">
+  <div class="split reveal">
+    <div><div class="photo"><img src="assets/assembly.jpg" alt="Morning assembly at FG Public School Kharian Cantt — students in white shirts and black trousers standing in neat rows on the green ground"/></div><p class="figcap">Morning assembly — white shirts, black trousers, neat rows. Discipline you can see.</p></div>
+    <div>
+      <div class="sec-head" style="margin-bottom:.6rem"><span class="k">Morning Assembly &amp; Discipline</span><h2>Every day begins the right way</h2></div>
+      <p class="lead">The school day at FG Public School starts on the green ground, with the whole school standing in neat rows for morning assembly — recitation, national anthem, and a short talk on good conduct.</p>
+      <ul class="checks">
+        <li>Daily assembly with recitation and the national anthem</li>
+        <li>Full uniform check — white shirt, black trousers, black shoes</li>
+        <li>House and proctor system: senior boys lead by example</li>
+        <li>Punctuality, cleanliness and respect for teachers</li>
+      </ul>
+      <p style="color:var(--muted)">Our proctors and prefects — easily recognised by their sashes — help maintain discipline and guide the junior students throughout the day.</p>
+    </div>
+  </div>
+
+  <div class="split reveal" style="margin-top:3.5rem">
+    <div>
+      <div class="sec-head" style="margin-bottom:.6rem"><span class="k">Patriotism &amp; National Days</span><h2>Proud Pakistanis, from a young age</h2></div>
+      <p class="lead">National days are celebrated with full spirit. Junior students hold the flags of Pakistan and Kashmir, wear thematic dress, and stand with the Principal and teachers to mark days like Independence Day and Kashmir Solidarity Day.</p>
+      <ul class="checks"><li>Flag-hoisting and national songs</li><li>Speeches, tableaus and thematic dress by junior classes</li><li>Love for Pakistan and respect for its defenders</li></ul>
+    </div>
+    <div><div class="photo"><img src="assets/flag-day.jpg" alt="Junior students holding the flags of Pakistan and Kashmir with the Principal and teachers at FG Public School Kharian Cantt"/></div><p class="figcap">Junior students with the Principal and teachers, holding the Pakistan and Kashmir flags on a national day.</p></div>
+  </div>
+</div></section>
+
+<!-- SPORTS -->
+<section id="sports" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><span class="k">Sports &amp; Co-Curricular</span><h2>Champions on the field, too</h2><p class="lead">Sport is a serious part of school life here — and the trophies in the Principal's office prove it.</p></div>
+  <div class="split reveal">
+    <div><div class="photo"><img src="assets/football-team.jpg" alt="Kharian Region football team of FG Public School Kharian Cantt in blue kits, posing with the Principal and coaches on the football ground"/></div><p class="figcap">The Kharian Region football team — in blue kits — with the Principal and coaches on the school ground.</p></div>
+    <div>
+      <h3 style="font-size:1.5rem;margin-bottom:.6rem">⚽ Kharian Region Football Team</h3>
+      <p style="color:var(--muted)">Our footballers represent the Kharian Region in FGEI inter-school and regional competitions, bringing home winner's trophies displayed in the school office. Regular coaching, inter-house matches and annual sports events keep every boy active.</p>
+      <div class="grid2" style="margin-top:1.2rem">
+        <div class="card"><h3>🏏 Cricket &amp; Athletics</h3><p>Inter-house cricket, races and annual sports day on the school's large green ground.</p></div>
+        <div class="card"><h3>🎤 Debates &amp; Functions</h3><p>Speech competitions, quiz, naat and national-day functions that build confidence.</p></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- GALLERY -->
+<section id="gallery"><div class="wrap">
+  <div class="sec-head reveal"><span class="k">Photo Gallery</span><h2>Real photos, real school life</h2><p class="lead">Every photo below is from our own campus — tap any photo to view it larger.</p></div>
+  <div class="gal reveal" id="gal">
+    <figure data-cap="The main school building — F.G. Public School, Kharian Cantt"><img src="assets/building.jpg" alt="Main building of FG Public School Kharian Cantt"/><figcaption>🏫 The Main Building</figcaption></figure>
+    <figure data-cap="Morning assembly — students in neat rows on the green ground"><img src="assets/assembly.jpg" alt="Morning assembly on the school ground"/><figcaption>🌅 Morning Assembly</figcaption></figure>
+    <figure data-cap="The Principal in his office, with the school's winner trophies"><img src="assets/principal.jpg" alt="Principal in his office with trophies"/><figcaption>🏆 The Principal &amp; School Trophies</figcaption></figure>
+    <figure data-cap="Kharian Region football team with the Principal and coaches"><img src="assets/football-team.jpg" alt="Kharian Region football team"/><figcaption>⚽ Kharian Region Football Team</figcaption></figure>
+    <figure data-cap="Junior students with Pakistan and Kashmir flags, with teachers and the Principal"><img src="assets/flag-day.jpg" alt="Junior students holding Pakistan and Kashmir flags with teachers"/><figcaption>🇵🇰 National Day — Junior Section</figcaption></figure>
+    <figure data-cap="Students and staff together on a national day at school"><img src="assets/students-flag.jpg" alt="Students and staff with national flags at school"/><figcaption>🎉 Students &amp; Staff — National Day</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- ADMISSIONS -->
+<section id="admissions" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><span class="k">Admissions 2026</span><h2>How to join FG Public School</h2><p class="lead">Admissions are announced by the school each year. For the 2026 session, the school's published schedule is:</p></div>
+  <div class="notice reveal"><span>🗓️ <b>Admissions close: 31 March 2026</b> &nbsp;•&nbsp; <b>Classes commence: 06 April 2026</b></span><a class="btn green" href="#contact">Visit the School Office</a></div>
+  <div class="steps reveal" style="margin-top:18px">
+    <div class="step"><b class="num">1</b><h3>Get the Form</h3><p>Collect the admission form from the school office during school hours.</p></div>
+    <div class="step"><b class="num">2</b><h3>Attach Documents</h3><p>Copy of B-Form / birth certificate, father's CNIC copy, previous result card and passport-size photographs.</p></div>
+    <div class="step"><b class="num">3</b><h3>Test / Interview</h3><p>The student appears in the entry test / interview on the announced date, as applicable for his class.</p></div>
+    <div class="step"><b class="num">4</b><h3>Merit &amp; Enrolment</h3><p>Successful candidates complete fee and enrolment formalities before classes commence.</p></div>
+  </div>
+  <div style="margin-top:2rem" class="reveal">
+    <details><summary>Who can apply?</summary><p>Boys seeking admission from the junior classes up to Class IX (subject to seat availability), including children of serving and retired armed-forces personnel and civilians, as per FGEI admission policy and quota.</p></details>
+    <details><summary>What is the school uniform?</summary><p>White shirt, black trousers, black shoes and the school belt — worn neatly every day, as seen in our morning assembly photos. In winter, the prescribed sweater / blazer is added.</p></details>
+    <details><summary>Where do I get exact dates and fee details?</summary><p>Admission schedules and fee details are displayed on the school notice board each session. Please visit the school office in Kharian Cantt for the current information.</p></details>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact"><div class="wrap">
+  <div class="split reveal">
+    <div>
+      <div class="sec-head" style="margin-bottom:.8rem"><span class="k">Visit Us</span><h2>FG Public School (Boys), Kharian Cantt</h2></div>
+      <p class="lead">The school is located inside Kharian Cantonment, district Gujrat, Punjab. Parents are welcome to visit the school office during school hours for admissions and general enquiries.</p>
+      <ul class="checks"><li>Location: Kharian Cantt, Punjab, Pakistan</li><li>Office hours: during school hours, Monday to Saturday</li><li>Best time for admissions: as per the announced admission schedule</li></ul>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:1rem"><a class="btn green" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=FG+Public+School+Kharian+Cantt">📍 Open in Google Maps</a><a class="btn" href="#admissions">Admission Guide</a></div>
+    </div>
+    <div><div class="photo"><img src="assets/building.jpg" alt="Front view of FG Public School Kharian Cantt main building and entrance path"/></div><p class="figcap">The school entrance — the paved path leads straight to the main building.</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fcols">
+    <div><h3>FG Public School (Boys)</h3><p>Kharian Cantt — a Federal Government Educational Institutions (FGEI) school.<br/><b style="color:var(--gold2)">Education • Discipline • Character Building</b></p></div>
+    <div><h3>Quick Links</h3><p><a href="#about">About</a><br/><a href="#academics">Academics</a><br/><a href="#sports">Sports</a><br/><a href="#gallery">Gallery</a><br/><a href="#admissions">Admissions 2026</a></p></div>
+    <div><h3>School Life</h3><p>Morning Assembly<br/>Football — Kharian Region<br/>National Days<br/>Inter-House Competitions<br/>Parent–Teacher Meetings</p></div>
+  </div>
+  <div class="fine"><span>© 2026 FG Public School (Boys), Kharian Cantt. All rights reserved.</span><span>Kharian Cantt • Punjab • Pakistan 🇵🇰</span></div>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-label="Photo viewer"><button id="lbClose" aria-label="Close">✕</button><div><img id="lbImg" src="assets/building.jpg" alt="School photo enlarged"/><p id="lbCap"></p></div></div>
+
+<script>
+var burger=document.getElementById('burger'),links=document.getElementById('links');
+burger.addEventListener('click',function(){links.classList.toggle('open')});
+links.addEventListener('click',function(e){if(e.target.tagName==='A')links.classList.remove('open')});
+var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+document.getElementById('gal').addEventListener('click',function(e){var f=e.target.closest('figure');if(!f)return;var img=f.querySelector('img');lbImg.src=img.src;lbImg.alt=img.alt;lbCap.textContent=f.getAttribute('data-cap')||'';lb.classList.add('open')});
+function closeLb(){lb.classList.remove('open')}
+var hdr=document.querySelector('header.site');
+window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',window.scrollY>30)},{passive:true});
+document.getElementById('lbClose').addEventListener('click',closeLb);
+lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb()});
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
